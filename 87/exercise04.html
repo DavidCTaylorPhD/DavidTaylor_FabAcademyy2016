@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Name Surname">
+    <link rel="icon" href="media/favicon.ico">
+
+       <title>Fab Academy 2016 - David C. Taylor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="media/fabacademy.css" rel="stylesheet">
+    
+    <!-- 3D files viewer -->
+    <script type="text/javascript" src="media/jsc3d_ie.min.js"></script>
+	<script type="text/javascript" src="media/jsc3d.min.js"></script>
+    <script type="text/javascript" src="media/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="media/jsc3d.touch.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Load the menu file -->
+    <script>
+	function menu() {
+					  $('#exercises').load("exercises-menu.html");
+					  $('#project').load("project-menu.html");
+					  $('#cclicense').load("license.html");
+					  }
+	</script>
+
+  </head>
+
+  <body onload="menu()">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">David C. Taylor</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
+              <ul id="exercises" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Project <span class="caret"></span></a>
+              <ul id="project" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+	<!-- Insert your content here below! -->
+
+
+     <h2>Electronics Production (Feb. 17)</h1>
+    
+    <h3>Process</h3>
+	<p>
+	 Below you will find my dictation, notes and documentation about the processes I went throught with regards to designing and building this exercise. A link at the bottom of the page will take you to all of the files that I created for this exercise. I used the files, directions and information for then <a href="http://fab.cba.mit.edu/content/projects/fabisp/">FabISP, a fab-able in-system programmer</a>. This instructions were used throughout the this exercise to complete this project.
+	</p>
+    
+    
+    <h3>Software Installation</h3>
+        
+	<p>I first began the process by installing the <a href="https://othermachine.co/othermill/otherplan/">Othermill software</a> and the <a href="http://www.cadsoftusa.com/download-eagle/">Eagle software</a> onto my computer. I installed the Othermill softwre so I could control the Othermill using my own computer, and I used the Eagle software due to a colleague telling me it was easier to use this software with regards to not needing to do any file conversions or changes to the orginal png file. He sent me a eagle file that was based on a file from a previous Fab Academy student.
+	</p>
+        <p class=pic><img src="http://fab.cba.mit.edu/content/projects/fabisp/layout.png">
+            
+<p>One of my colleagues walked me through how to use the Othermill and the settup process for it. I first learned how to change out the bits using the two wrenches, which one is for turning the nut and the other is for keeping the shaft from moving. I than placed a a 1/64 bit into the Othermill. This bit is used for cutting away the copperboard material. The 1/32 bit is used for cutting the outside edge of the board. This will cut the board out. It is important not to drop these bits, they do break very easily. During a transfer of the 1/64 bit, a colleague and I dropped the bit and it became broken.</p>
+        
+        <p>The Othermill's software is very straight forward. You can go step by step through it very easily. You need to change the tool part you are using along the way and make sure to setup your depth of the platform that the copper board is sticking too. It is important that the bit is in the green safe zome as well as when you move the x axis that it still touches the back of the platform in the back corner to the left. The copperboard is put on the platform using double sided like tap that makes it stick to the metal platform. It is important to choose your trace, outline and etc. You can also load files for cut here. It is important that all of the physical windows are closed. Plus, when you hear the beeping noise you know it is ready to work. You can see this process in the pictures below: </p>
+        
+        <p class=pic><img src=media/othermill%20setup3.png></p>
+        <p class=pic><img src=media/othermill%20setup4.png></p>
+        <p class=pic><img src=media/othermill%20setup5.png></p>
+        <p class=pic><img src=media/othermill%20setup1.png></p>
+        <p class=pic><img src=media/othermill%20setup2.png></p>
+        <p class=pic><img src=media/othermill%20setup6.png></p>
+    
+	<p>The Othermill software is great. The more I use it I realize it's ability to limit your mistakes. For example, it will always make you aware of the fact if you do not have the right bit by giving you a prompt. Plus, the warning if your are not contacted or you do not have the window closed. The image below is the bit we broke on the far left of the picture:
+        </p>
+        <p class=pic><img src=media/broken%20othermill%20bit.png></p>
+        
+	<h3>Surface Mount Soldering Practice</h3>
+	<p>
+	Before this exercise, I have never done surface mount soldering. I have only done regular soldering. I began this process by watching a how to video on <a href="https://www.youtube.com/watch?v=3NN7UGWYmBY">surface mount soldering</a>. This video was extrmely helpful. I began practicing by using a piece copper board, surface mount tweezers, solder, flex and a soldering iron. I used some resistors and began soldering them to the board. I did this by putting flex onto the board and tinning my iron. I put a little bit of soldering on my iron and placed it onto the board where I put the flex. Next, I held the chip with my tweezers and placed it on to the solder, which I reheated with the iron. I then began to stick. After it cooled, I repeated this process to the other side of the resistor. The first time I did it, I used to much solder. The second time I practiced, I used less solder. You can see this in the images below:
+	</p>
+        <p class=pic><img src=media/surface%20mount%20practice1.png></p>
+        <p class=pic><img src=media/surface%20mount%20practice2.png></p>
+        <p class=pic><img src=media/surface%20mount%20practice3.png></p>
+        
+    <p>I did practice more with more advanced parts or chips. I feel these will be harder. I also want to use some of the others tools.</p>
+        <p class=pic><img src=media/board%20practice%20surface%20mount.png></p>
+     
+	<h3>Cut Board</h3>
+	<p>I cut my board following the step-by-step directions that the Othermill walks you through as well as one of my colleagues helped me with this process. It was an easy process that lead me to creating my board. I had to run the first cut under trace with the 1/64 bit, which took about 3 hours. Next, I ran the outline cut using the 1/32 bit. I went throught the setup process once again as well as I vacumed the work platform. This helps when using the adhesive tape on the back of the copper board. I learned during this process you can change the origin of the board in Othermill by change the view and moving the object. I used the Eagle software to convert the png file of the board I cut out. I loaded the eagle file into the Othermill for the trace and outline cuts. 
+        </p>
+	       <p class=pic><img src=media/cut%20board1.png></p>
+        
+	<h3>Electronic Componets</h3>
+	<p>I used solder paste, tweezers, and the Puhui Infrared IC Heater in the process of soldering the componets to my board. I placed all of the smallest parts on first. I did this by putting a small amount of solder paste on each pad with a needle. I than would put the part on to the stick solder paste using tweezers. I did this one piece at a time, so I would not confuse the parts. I put the connectors pins on by cutting them into two sets of three. I took these sets and super glued them back-to-back. Next, I trimmed the connecter pins down to fit the pad sizes. After completely putting all the compents on the board, I placed it gentely into the oven. I pushed F1 and it baked for 7 minutes. After it was done baking, I hit the S button and pulled out the board. I than used a soldering iron to create the SJ1 and SJ2 solder bridges. I than used a multimeter to check different connections on the board to see if my soldering worked. I found that having a magnification tool with a built in lamp was very helpful for seeing the little pieces.</p> 
+        
+      <p class=pic><img src=media/soldering%20oven.png></p>
+        
+      <p class=pic><img src=media/built%20isp%20board1.png></p>
+        
+      <h3>Program the Board</h3>
+        <p> I followed the instruction to install the software that Terence sent us. I used the <a href="http://archive.fabacademy.org/archives/2016/doc/programming_FabISP.html">installation instructions</a> and followed the Mac process. I first ran into not having the correct OX for the X Code, so I switched to another computer. I was able to install the Cross Pack AVR. Next, I worked with Tom and Ian to install the software. We installed the X Code and Cross Pack AVR. The terminal instructions were missing a step. When following the directions, you follow it asks you to cd ~/Desktop/firware, which is nor correct. You need to do cd ~/Desktop/fabISP_mac.0.8.2_firmware  to correctly install the firmware. I feel like the isntructions assumed you knew to do that without it being stated. We had the brainstorm of correcting this when we got an error of no directory.
+        </p>
+        
+        <p>Next, we used a  ATAVRDragon to program our board.
+            <img src="http://www.newark.com/productimages/standard/en_US/68T2063-40.jpg">
+            
+            Now we did a text edit, which you need to do plan text. While in the process of changing the recommend code lines, we commented them out so we would not make any msitakes due to being confused on what exactly we need to put in the lines. We used the <a href="http://fab.cba.mit.edu/content/projects/fabisp/">FabISP, a fab-able in-system programmer</a> and the <a href="http://www.farnell.com/datasheets/1668628.pdf">ATAVR Dragon  Instructions from Farnell</a>. We wired the ISP to the Dragon using female to female jumper wires. Than we continued using the FAB ISP directions. We began getting the terminal codes to show up as they showed in the directions. Next, we used the <a href="http://www.atmel.com/webdoc/avrdragon/avrdragon.section.wnj_dsd_lc.html">Atmel isntructions for making wiring connections</a>. This supported our process of maign sure the wiring was done correctly. We than had issues with trying to label the write device in the code. We tried AVR DRAGON, AVRDRAGON and dragon_isp in the Makefile. Making the cahnge to dragon_isp made progress, but still getting an error message in the terminal. We began trying different boards to see if the issue was the wiring. Next, we use the option key and the apple to find the system preferences to check if the board was being recoginized by the iMac, which the it was recgonizing the DRAGON. We continued trying the different boards we made, and trying the terminal commands again to make sure we did not make a mistake. So we tried the make clean, make hex and make fuse commands. We kept getting an error message that explained the fuse not ok. We realized the power cable was not attached to the isp. This still did not make a difference. We check that if we had the wiring correct again as well as running to much power, such as the ISP being powered and the VCG to the VCC. Both changes did not work. We kept searching the internet, such as Instructables, but still found no sucess. We ketp trying to fix this for multiple hours. We could get the make clean and make hex commands to work,  but still got an error after the make fuse. We even tryied this process to an Arduino. This provide some good new, due to it was able to read the Arduuino and attempted to load it but it could not find the tiny chip. We continued to get the same error message of RSP_NO_TARGET_POWER or RSP_DEBUGWIRE_SYNC_FAILED. We keep trying the different boards we create as well as changing out USB cords. Inconlusion, we tried to another arduino and it worked except the for the wrong chip. We think we baked all of our chips to long and fried them. </p>
+        
+        <p class=pic><img src=media/ISP%20WIRING%201.png></p>
+        <p class=pic><img src=media/ISP%20WIRING%202.png></p>
+         <p class=pic><img src=media/arduino%20attempt1.png></p>
+        
+        <p>We also attempted programming the FAB ISP using the Pocket AVR Programmer by Sparkfun. We used the <a href="https://learn.sparkfun.com/tutorials/pocket-avr-programmer-hookup-guide?_ga=1.125193226.1262469676.1447268394"> instructions</a> provided. This lead us to using the Arduion software, which had us choice the tinyIsp under tools and uploading using programmer under files. Then we tried burning the bootloader under tools. We did not find success. 
+        
+            
+            
+<p>After multiple days and multiple hours, Ian pointed out to me that my chip was on backwards. To say the least, I was not very happy at all about this discovery. This than need to be fixed. I feel like I udnerstand the terminal process for the dragon and the wiring setup. I am extemely frustrated right now.</p>
+        
+        <h3>Next Steps</h3>
+        
+        <h4>During Exercise 5</h4>
+        
+        <p>Terence looked at our work and came to the conclusion that we have two many variables that can be casuing the issue. He suggested we start over fresh with another board, specifically the one Neal created. I created an svg of the file by takign a screen shot of Neal's board and uploading it into Inkscape. Next, I bit mapped the image and deleted the png. I than upload the svg into OtherPlan. The sizing did not match and the board was visually to big to work. </p>
+        
+        <p> We continued to look for answers with this project. My whole group tried multiple times using the fab module to create new documents in different file types that the OtherPlane software would use, but myself and others kept having problems with the otherplane software working. Each file type, svg, and etc., would have issue with either cutting the outside edge, the trace (engrave) or both. We used the othermill support page, which stated it could use either svg, g-code (nc and tap), brd, and gerber (gtl and gbr). Every attempt that I tried and my colleagues ended in failure. One of my colleagues tried switch parts of our old boards and that did not work either. I even tried using the different svg files in InkScape, but end up having trouble with aligning the otherplan softwre when I loaded the software into the machine. Plus, the settings in the fab module would not highlight as choice when we could see the otherplane/othermill file features as an option. I even made changes to the stroke line size in Inkscape and more. Next option is to rebuild the previous board and solder mount each piece by hand. Below are images of the fab module files created: </p>
+        
+            <p class=pic><img src=media/fab%20board%20isp%20inkscape.png></p>
+        <p class=pic><img src=media/fab%20board%20isp%202.png></p>
+         <p class=pic><img src=media/fab%20board%20isp%20attempt.png></p>
+            <p class=pic><img src=media/isp%20board1.png></p>
+     
+               <p class=pic><img src=media/new%20isp%20design.png></p>
+  
+        <p>We made another board type out the three offered from the FabLab. We met with Adam Harris, a PhD in electrical engineering and a 2014 Fab Academy graduate, spent time checking over our work and looking at process to provide some help. I learned that the file we are using from the make file for the ISP already has a make hex code in it, so we do not need to make clean. This can cause an issue, so we need to just make hex and than make fuse. You can also possible use make download or make all instead of make fuse in specific times. This allows the chip to set the fuses for timing purposes. If the process is done incorrectly, you ca lock down the chip. Furthermore, we learned that we had our LED flipped the wrong way as well as we need to change our capacitor to the 10 Uf because we used an incorrect capacitor. We were able to get the board to power up because the LED turned on. We also tried using different firmware, such as using the Attiny firmware 1.2.1 instead. We still had no luck to get it to work. I learned more information, but I feel like we are making small steps in progress, which is frustrating. We did email the FabLab community and began getting feedback about using different. Zaric and Firoe Basile provided supprot with regards to identifying the issue with using the wrong driver and firmware. We made changes and still had no results. We kept getting the driver to work with the baord but it would not communicate with it with the device signature = 0x0000. We used the <a href="https://learn.adafruit.com/usbtinyisp/overview"> Adafruit Usbtiny ISP programmer</a> as well as we used the driver installation process too. We did this process on a Windows machine. W even used the <a href="http://blog.zakkemble.co.uk/avrdudess-a-gui-for-avrdude/">avrdudess software for windows</a> to check for connections using this gui instead of manual terminal process.</p>
+        
+          <p class=pic><img src=media/powered%20isp.jpg></p>
+              <p class=pic><img src=media/driver%20screen%20isp.JPG></p>
+      
+        
+        <p>We think that we might be having an issue with a banch of bad hardware, which I have had experience with this in the past as well as a KickStarter company just posted that they got a bad bach of chips from DigaKey. The other theory that we think could be an issue is the OtherMill not playing nice with the Fab module. We asked the community for help with the OtherMill. Neal told us to try using the G Code as well as Jani Ylioja told us to use the Eagle file for the ISP on the Fab Academly page created last year by Jani. The next step is to try this Eagle file from Jani and cut it on the OtherMill as well as surface moutn sodler the parts.</p>
+        
+      <p>We finally got it to work after multiple days, hours and pain. Soldering and following the clean directions ended up being the issue. I did pure surface mount soldering  to find success. I first used resin with a paint brush on the board pads. I than hand soldered each part carefully. My first board did not work because it ripped the copper from the board when making adjustmnets to the jumper pins. I was following the directions from <a href="http://sheekgeek.org/2016/adamsheekgeek/how-to-fabtinystar-programmer">Adam Harris</a> which was based on Zaerc's design. Adam used a regulator in his design instead of ziner diodes. We learned this by analyzing the schematic. Finally, we noticed that the jumper pins on the ISP were thin in comparison to Adam's board as well as it did not create a tight connection to cables. When I was trying out a board and it was not tight with the adafruit programmer cable, so I tried it on Adam's board to compare. I realized Adam's boards had thicker pins which created a better connection, so I used thicker pins on my board that worked.</p>  
+        
+         <p class=pic><img src=media/broken%20isp.JPG></p>
+        
+        <p>Adam's Board</p>
+        <p class=pic><img src=media/adam%20isp.png></p>
+        
+        <p>Zaerc's Board</p>
+        <p class=pic><img src=media/zaerc%20isp.png></p>
+        
+        <p>I than began using <a href="http://fabacademy.org/archives/2015/doc/FabTinyIsp/index.html">Zaerc's baord</a> after cutting it out. I also learned that it is important to have the ziner dioades line facing the correct way. After checking the board for power, which it had, we used the <a href="http://blog.zakkemble.co.uk/avrdudess-a-gui-for-avrdude/">avrdudess</a> on a windows machine. This finally worked and we were able to get the board programmed. You can see this in the images below. We the first image showing power, the second showing the board communicating with the avrdudess, and the last image showing the board being programmed successfully.</p>
+        
+        <p class=pic><img src=media/isp%20power.JPG></p>
+        <p class=pic><img src=media/isp%20communication.JPG></p>
+        <p class=pic><img src=media/tinyprogrammerFinishedSettings.PNG></p>
+        
+        
+   	    	<h3>Project Files</h3>
+	<p>
+	<p>This is a button to access the files created for this exercise course for all of the above softwares.</p>
+            <p><a class="btn btn-primary" href="https://drive.google.com/folderview?id=0Bxi9iaM7VRHYdE9QY01VNHZfR1k&usp=sharing" role="button">View more &raquo;</a></p>
+    <!-- End of your content -->
+
+    </div> <!-- /container -->
+
+	<!-- footer -->
+    <footer id="footer">
+        <p id="cclicense">
+                </p>
+        <p class="license">
+        Theme: <a href="https://github.com/openp2pdesign/FabAcademy_Template">Fab Academy Template</a> by <a href="http://openp2pdesign.org">Massimo Menichinelli</a> <br>
+        Based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a>+<a href="http://jquery.com/">JQuery</a>+<a href="https://code.google.com/p/google-code-prettify/">google-code-prettify</a>+<a href="http://jmblog.github.io/color-themes-for-google-code-prettify/github/">GitHub theme for google-code-prettify</a>+<a href="https://code.google.com/p/jsc3d/">JSC3D</a>+<a href="https://github.com/thegrubbsian/jquery.ganttView">jquery.ganttView</a>.
+        </p>
+    </footer>
+    
+
+	<!-- Do not touch this! -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="media/jquery-1.9.1.min.js"></script>
+    
+    <!-- Syntax Highlighter -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js">
+    </script>
+    <!-- From https://github.com/jmblog/color-themes-for-google-code-prettify -->
+    <link href="media/github.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()   
+		})
+	  }(window.jQuery)
+	</script>
+	
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

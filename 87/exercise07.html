@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" conte  nt="">
+    <meta name="author" content="Name Surname">
+    <link rel="icon" href="media/favicon.ico">
+      
+    <t  itle>Fab Academy 2016 - David C. Taylor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="media/fabacademy.css" rel="stylesheet">
+    
+    <!-- 3D files viewer -->
+    <script type="text/javascript" src="media/jsc3d_ie.min.js"></script>
+	<script type="text/javascript" src="media/jsc3d.min.js"></script>
+    <script type="text/javascript" src="media/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="media/jsc3d.touch.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Load the menu file -->
+    <script>
+	function menu() {
+					  $('#exercises').load("exercises-menu.html");
+					  $('#project').load("project-menu.html");
+					  $('#cclicense').load("license.html");
+					  }
+	</script>
+
+  </head>
+
+  <body onload="menu()">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">David C. Taylor</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
+              <ul id="exercises" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Project <span class="caret"></span></a>
+              <ul id="project" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+	<!-- Insert your content here below! -->
+
+
+     <h2>Computer-Controlled Machining (Mar. 9)</h1>
+    
+    <h3>Process</h3>
+	<p>
+        Below you will find my dictation, notes and documentation about the processes I went throught with regards to using the ShopBot CNC machine, VCarve design and making something big. Each of the topics will be covered in seperate sections. A link at the bottom of the page will take you to all of the files that I created for this exercise. For more information about <a href="http://academy.cba.mit.edu/classes/computer_machining/index.html">Exercise 7</a>.</p>
+    
+    
+    <h3>Design and VCarve</h3>
+	<p>I went home and asked my wife what would be useful item that we could use at home, after I suggested that I was thinking about creating a bookshelf. My wife was not a fan of this idea, because, she said we did not need a bookshelf or have the room for one. She suggested that it would helpful to have a step stool for her. I took her idea for a step stool a bit further. I came up with an idea to create a stepstool that she could use as well as our son, once he is able to walk so he can reach the bathroom sink to was his hands. Over all, I planning a head and my wife likes the idea. I developed my design around <a href="http://www.wordsnwood.com/2014/bathstepstool/">Art Mudler's Bathroom Stepstool</a>. I used his general layout as a guide for design my own stepstool. I liked how his had rounded edges, handles and curves. I thought thought this would bbe helpful for having a small child around it. </p>
+        
+        <p>I used VCarve to design the stool parts. I create the stool using a series of guidelines to help layout my dimnesions after setting up the deminsions of the wood at 24"x24"x0.745". I used a caliper and a tape measure to double check the sizes. When creating guidelines, you can right click on them and gain teh ability to change the angle of them and delete them too after you drag them from the top or side to create gneral vertical or horziontel lines. Next, I drew lines with lengths and interconnected them to create squares and rectangles. Next, I used the arch tool to create curved edges in all of the corners while created the side pieces. Than I used the scissor tool to delete the corners. I kept using guide lines, espcially at angles to help with finding center points. Next, I create 2 horizontal rectangles the thickness of the wood that were 7 inches long and 2 two inche vertical pieces in the center of the horzinotal pieces as cut in and supports for the steps. I used the dog bone tool on the ends of the vertical pieces so the shopbot would be able to cut the corners as well the long horzontal pieces went oer the edge a little bit so it would cut them completely through the edge. I put an oval to create a handle near the top of the peice.</p>
+        
+        <p class=pic><img src=media/shotbot5.png></p>
+        
+        <p>Now, I went over to setting up the features to be able to do the 3D cutting features. I set all the pieces to a 1/4" down bit with double flutes as well as I used 0.5 inch ramp on all my cuts as well as 4 tabs on all of the pieces and a conventional cut since I was using Birch plywood. I profiled the outside edge, pocketed the cut ins at 0.3725 (half the thickness of the wood), and pocked the oval all the way through at .0745 , which you will get a warning telling you that you are cutting all the way through the wood. I calcuated each part as well as ran the simualtion of the cuts multiple times in different view points to help with cutting down on mistakes, because, it helps you be able to see to different issues. It is important to save your work as a VCarve file and a ShopBot file. When you save your ShopBot files, make sure to click all of the profiles, because, if you do not do this you will leave off different profiles. I learned this when I was attempting to cut my piece the first time, which I used a 3D Air Cut (which is an awesome way to see if your cut is going to work because it has the Z axis raised up and cuts over the profile), my pieces only cut one profile due to me not checking the other profiles.</p>
+        
+        <p>I than made a second document with the same peices setup and made two steps that were 7.5 inches long by 13 inches wide as well as two 13 inches long by 2 inches high support pieces for the steps. These were simple profile cuts using the same features for calculation as before. It is important to check the box for tabs and ramps.</p>
+        
+    
+        <p>Next, I merge the two documents together by creating one document with all of the parts. I decided to use a 48"x24"x0.745" piece of birch plywood for my cut. Merging everything made it a easier process. I did make one mistake when cutting the first time, I forgot to mirror the side peiece of my bench and end up with two right sides, which you can see in the first two photos below. I than went back and bought another peice of wood and made a mirror change to my piece. When moving parts that have multiple parts, it is important to group them before moving them. You than will need to ungroup them before usign the recaluate all feature for all of your parts. Also, if your tabs snap during cutting your peices will began to move and be destroyed, which happen to me. With that being said, do not leave the room while your projects is being cut. I was able to stop the ShopBot and grab a piece when a tab snapped. I finished the cut using a chizzel and hammer. I also learned that the order you cut in is important. You should do any pocket cuts first on a piece before doing the profile, because, it cuts back on vibration of the part and limits the change of the tab breaking.</p>
+        
+        <p class=pic><img src=media/shopbot2.png></p>
+        <p class=pic><img src=media/shopbot3.png></p>
+        
+        <p>Corrected files below:</p>
+        
+	      <p class=pic><img src=media/vcarve1.png></p>
+        <p class=pic><img src=media/vcarve2.png></p>
+        
+	<h3>ShopBot</h3>
+	<p>When using the ShopBot, you need to warm up the spindle first, if no one else has used it that day. While the spindle was warming up, I took my piece of borch and screwed it to the top baord on the ShopBot. I put the bow of the board up, so when I screwed the corners down the center would be flat. I also used a C-clamp to hold another area down. Next, I followed the steps below:</p>
+
+         <p class=pic><img src=media/shoptbot1.png></p>
+       
+<p> When I would go to cut my pieces, I would make sure that I had eye and ear protection. Next, I would use the preview feature to make sure my piece looked correct. This helped me when I would forget to click a profile and when my deminsion were backwards.  For example, 48"x24" vs 24"x48" which make a large difference. You can see this mistake by the look on my face in the first image below; I am much happier in the second picture. Also, it is important to have your vacuum on when cutting, so you do not have dust everywhere.
+    
+    <p class=pic><img src=media/shopbot4.png></p>
+    <p class=pic><img src=media/shopbot6.png></p>
+        
+        <p>It does take time using the arrow keys on the keyboard when moving the spindal. Also, the <b>JH</b> short cut, which stands for Jog Home, is an awesome feature for going back to your relative zero point. It is important to hit the green button so the spindle is on before hitting start when cutting. If not, you will break your bit.</p>
+        
+        <h3>Finishing and Assembling</h3>
+        
+        <p>After cutting all of parts(the second time around from making mistakes), I sanded all of the parts with sandpaper, <a href="https://www.dremel.com/en-us/Tools/Pages/CategoryProducts.aspx?catid=2094">Dremel Multi-Max Tool</a> with a sander attachment, and a <a href="http://www.blackanddecker.com/products/power-tools/portable-power-tools/sanders/mousereg-detail-sander/ms800b"> Black and Decker Mouse Sander</a>. I did that to get rid of the tabs and the rough edges. I also chipped so wood out to make them fit as well, but this can be a problem when using plywood due to it wanting seperate into layers. Next, I sanded the cut outs a lot due to the imperfections in the man made wood not actually being the sizes it reads as well as not being the same thickness all around as well as due to the ShopBot cutting so preciously. I needed to do this to fit my step and support pieces into the sides. This took a few hours to get right. I was going to use wood glue, but it was such a tight fit that I did not even use it. I only used a rubber hammer to put the pieces together. I than used wood glue to fill in the imperfections of using birch plywood. When I do this again, I wood use hardwood so I will not have to deal with plywood. Plywood is great for certain projects and prototyping pieces. Plywood has to many imperfections as well as it can seperate when trying to chizzel out a chip.  Lastly, I stained the wood a gloss expresso brown to match the bathroom and kitchen cabinets throughout my house that my wife picked out. I than put a finishing satin polyurethane to protect the wood. I also tested it by standing on it myself as well as my mother-in-law stood on it too. Below are pictures of the overall build, assemble and finishing process:</p>
+        
+          <p class=pic><img src=media/step%20stool%20assembly1.png></p>
+    <p class=pic><img src=media/step%20stool%20assembly2.png></p>
+          <p class=pic><img src=media/step%20stool%20assembly3.png></p>
+    <p class=pic><img src=media/step%20stool%20assembly4.png></p>
+          <p class=pic><img src=media/step%20stool%20assembly5.png></p>
+    <p class=pic><img src=media/step%20stool%20assembly6.png></p>
+          <p class=pic><img src=media/step%20stool%20assembly7.png></p>
+         <p class=pic><img src=media/step%20stool%20assembly8.png></p>
+         <p class=pic><img src=media/step%20stool%20assembly9.png></p>
+        
+        <p>Below is an image of my finished step stool. I added sticky pads to the bottom of it, so it won't scratch the wooden floors in my house. Lastly, my wife loves it!</p>
+        
+              <p class=pic><img src=media/finished%20step%20stool.jpg></p>
+        
+
+	<h3>Project Files</h3>
+	<p>
+	<p>This is a button to access the files created for this exercise course for all of the above softwares.</p>
+            <p><a class="btn btn-primary" href="https://drive.google.com/folderview?id=0Bxi9iaM7VRHYQTZkMkFVaHlWWlk&usp=sharing" role="button">View more &raquo;</a></p>
+    <!-- End of your content -->
+
+    </div> <!-- /container -->
+
+	<!-- footer -->
+    
+    <footer id="footer">
+        <p id="cclicense">
+                </p>
+        <p class="license">
+        Theme: <a href="https://github.com/openp2pdesign/FabAcademy_Template">Fab Academy Template</a> by <a href="http://openp2pdesign.org">Massimo Menichinelli</a> <br>
+        Based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a>+<a href="http://jquery.com/">JQuery</a>+<a href="https://code.google.com/p/google-code-prettify/">google-code-prettify</a>+<a href="http://jmblog.github.io/color-themes-for-google-code-prettify/github/">GitHub theme for google-code-prettify</a>+<a href="https://code.google.com/p/jsc3d/">JSC3D</a>+<a href="https://github.com/thegrubbsian/jquery.ganttView">jquery.ganttView</a>.
+        </p>
+    </footer>
+    
+
+	<!-- Do not touch this! -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="media/jquery-1.9.1.min.js"></script>
+    
+    <!-- Syntax Highlighter -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js">
+    </script>
+    <!-- From https://github.com/jmblog/color-themes-for-google-code-prettify -->
+    <link href="media/github.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()   
+		})
+	  }(window.jQuery)
+	</script>
+	
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

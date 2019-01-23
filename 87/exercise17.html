@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Name Surname">
+    <link rel="icon" href="media/favicon.ico">
+
+       <title>Fab Academy 2016 - David C. Taylor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="media/fabacademy.css" rel="stylesheet">
+    
+    <!-- 3D files viewer -->
+    <script type="text/javascript" src="media/jsc3d_ie.min.js"></script>
+	<script type="text/javascript" src="media/jsc3d.min.js"></script>
+    <script type="text/javascript" src="media/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="media/jsc3d.touch.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Load the menu file -->
+    <script>
+	function menu() {
+					  $('#exercises').load("exercises-menu.html");
+					  $('#project').load("project-menu.html");
+					  $('#cclicense').load("license.html");
+					  }
+	</script>
+
+  </head>
+
+  <body onload="menu()">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">David C. Taylor</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
+              <ul id="exercises" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Project <span class="caret"></span></a>
+              <ul id="project" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+	<!-- Insert your content here below! -->
+
+<h2>Applications and Implications (May 25)</h1>
+    
+    <h3>Process</h3>
+	<p>
+	 Below you will find my dictation, notes and documentation about the processes I went throught with regards to planning my final project. I met with Terence to plan overview of my final project. Below I answered each of the preparation questions for this weeks assignment.
+	</p>
+    
+    
+    <h3>What will it do?</h3>
+	<p> I am making a Batman spot light for my son's bedroom, which I planned the basic foundation during <a href="http://archive.fabacademy.org/archives/2016/charlottelatin/students/87/exercise01.html">week 1</a>. It will have a dual sweeping servo arm attached to a laser cut box with batman logos and etc. engraved on it using the laser cutter. Furthermore, the box will have batman casted logos with magnets inside them to be able to connect to the box for mechanical hold. The mold has already been made using the shopbot for the <a href="http://archive.fabacademy.org/archives/2016/charlottelatin/students/87/exercise12.html">Molding and Casting exercise</a>. The batman spot light housing was design and made already during the <a href="http://archive.fabacademy.org/archives/2016/charlottelatin/students/87/exercise02.html">CAD exercise</a>. Next, I am going to purchase a black framed mirror and put my <a href="http://archive.fabacademy.org/archives/2016/charlottelatin/students/87/exercise14.html"> Composite Batman logos</a> painted black in each corner of the mirror, so the Batman light will reflect off it. I will be using a combo input and ouput board to program the servos and an LED light for the spot light, which I began working on this during the <a href="http://archive.fabacademy.org/archives/2016/charlottelatin/students/87/exercise13.html">Output exercise</a>. I am planning on programming the board using the Arduino IDE. In conclusion, the spot light will sweep back and forth projecting the batman logo into a mirro to create a reflection with in the room as well as the box will house the board. Lastly, Terence wants me to have a interface that uses a button to turns the system on and off via my computer in python or processing that interacts with the C. I may also use a Fabduino design  titled <a href="http://archive.fabacademy.org/archives/2016/doc/projects/satshakit/satshakit.html">satshatkit</a>.</p>
+
+        <h3>Who's done what beforehand?</h3>
+	<p> With my project, no one has done this in the past. This is a custum design. I am just a Batman weirdo that is projecting it on his son. The interface has been done before by Terence. The <a href="http://archive.fabacademy.org/archives/2016/doc/projects/satshakit/satshakit.html">satshatkit</a> has been done before, but I will add my own GND pin to it.
+	</p>
+	
+	<h3>What materials and components will be required?</h3>
+	<p>I will be using input and output devices with a Eagle designed board. I will be using the Shopbot for my molds for the casting and composites parts. I will be programming and using mechanical holds. The laser cutter will be used for the box and the compiste section too. A variety of CAD, such as Aspire, 123D Design, TinkerCAD, and Inkscape, is used for this project as well as 3D printing for my spot light housing. I will need wood, electronic componets, black paint, servo motors, PLA, a mirror, burlap, casting and compsosite matierals, copper board, and plastic board for the molds.
+	</p>
+	
+     
+	<h3>How much will it cost?</h3>
+	<p>I am estimating that it will cost about $100.00. At my lab, I have a lot of the materials already. I need to get the mirror, black paint and a few other things.
+	</p>
+	
+	<h3>What parts and sytems will be made?</h3>
+	<p>	
+	The molds, the spot light housing, the castes, the composites, the box, and the board will be made by me. The servos and the mirror will not be made by me. I will use the ShopBot to make the molds, the laser cutter to create the box and burlap cut outs of the logo, a 3D printer for the housing, the othermill for milling my boards, and a variety of chemicals for the casting, molding and composites.
+    </p> 
+    
+    <h3>What processes will be used?</h3>
+	<p>
+	I will be using casting and molding, programming, inputs and output devices, composites, CNC machining, laser cutting, and circuit board design, and mechanical holds. The image below shows the processes broken down for each section of my project. I met with Terence this week to plan out my project and the processes involved in creating it.
+	</p>
+	
+      
+    <h3>What tasks need to be completed?</h3>
+      <p>I need to laser cut my box and create the the castes and composites. I have the molds completed already for each material, which the molds were made using the ShopBot. I already made the batman housing using a 3D printer. I need to improve my board and code for the servo and LED light. The largest task will be creating an interface in python that speaks to my C code through a GUI button that turns the whole thing on and off. Terence said he will work with my one-on-one to complete this specific task. I need to finish soldering my Fabduino, because, I have made my design change to it as well as cut it out on the othermill.
+          
+          <h3>What questions need to be answered?</h3>
+        <p>The largest question that needs to be answered is how long will this take me. I feel good about 80% of the work. The last 20% will be the hard stuff with regards to the programming and getting my board to due the correct stuff. This will be a challenge, but I feel I am ready for it.</p>
+        
+        <h3>What is the schedule?</h3>
+        <p>The schedule is to have this done by the end of the course. I just want to learn and get it done.
+      </p>
+        
+        
+        <h3>How will it be evulated?</h3>
+        <p>This is a question for the instructors. I would image a rubric would be used to evulate the work. By using a rubric that has been tested and has had its validity confirm will increases its reliability. Personally, I feel if it works and I reflect on my learning, than it will be successful.
+      </p>
+		
+		<h3>What is the timeline?</h3>
+		
+		<p>I have all of the materials, so I feel that I can have the project done in about two weeks. I will work on it the second and third weeks of June.</p>
+		
+	
+        
+        <h3>Images from the Processes Planning Meeting with Terence</h3>
+        
+          <p class=pic><img src=media/week16.1.JPG></p>
+          <p class=pic><img src=media/week16.2.JPG></p>
+        
+     <h2>Applications and Implications (May 18)</h1>
+    
+    <h3>Process</h3>
+        
+	<p>Below you will find my ideas for disseminating my final project. I met with Terence to plan out my ideas. </p>
+    
+    
+    <h3>Spreading the Word About my Project</h3>
+	<p>
+	First, I will put my project on my website so that it can be access by the Fab Academy community. Next, I will share my project with my students as a process for creating a project through skill development. I will also have it promoted on our school's website and Fab Lab site. Furthermore, I will add it to my personal social media sites, such as Google+ and Facebook. By adding it to my social media pages, I can reach people who are not aware of the Fab community. Lastly, my colleagues and I will be applying to teacher conferences, such as NAIS, NSTA, and STEM Forum. This will provide the ability to reach multiple educators across the country.
+	<p>
+	
+    <!-- End of your content -->
+
+    </div> <!-- /container -->
+
+	<!-- footer -->
+    
+    <footer id="footer">
+        <p id="cclicense">
+                </p>
+        <p class="license">
+        Theme: <a href="https://github.com/openp2pdesign/FabAcademy_Template">Fab Academy Template</a> by <a href="http://openp2pdesign.org">Massimo Menichinelli</a> <br>
+        Based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a>+<a href="http://jquery.com/">JQuery</a>+<a href="https://code.google.com/p/google-code-prettify/">google-code-prettify</a>+<a href="http://jmblog.github.io/color-themes-for-google-code-prettify/github/">GitHub theme for google-code-prettify</a>+<a href="https://code.google.com/p/jsc3d/">JSC3D</a>+<a href="https://github.com/thegrubbsian/jquery.ganttView">jquery.ganttView</a>.
+        </p>
+    </footer>
+    
+
+	<!-- Do not touch this! -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="media/jquery-1.9.1.min.js"></script>
+    
+    <!-- Syntax Highlighter -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js">
+    </script>
+    <!-- From https://github.com/jmblog/color-themes-for-google-code-prettify -->
+    <link href="media/github.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()   
+		})
+	  }(window.jQuery)
+	</script>
+	
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

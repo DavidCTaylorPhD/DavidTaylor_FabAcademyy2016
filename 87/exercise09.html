@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Name Surname">
+    <link rel="icon" href="media/favicon.ico">
+
+    <title>Fab Academy 2016 - David C. Taylor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="media/fabacademy.css" rel="stylesheet">
+    
+    <!-- 3D files viewer -->
+    <script type="text/javascript" src="media/jsc3d_ie.min.js"></script>
+	<script type="text/javascript" src="media/jsc3d.min.js"></script>
+    <script type="text/javascript" src="media/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="media/jsc3d.touch.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Load the menu file -->
+    <script>
+	function menu() {
+					  $('#exercises').load("exercises-menu.html");
+					  $('#project').load("project-menu.html");
+					  $('#cclicense').load("license.html");
+					  }
+	</script>
+
+  </head>
+
+  <body onload="menu()">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">David C. Taylor</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
+              <ul id="exercises" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Project <span class="caret"></span></a>
+              <ul id="project" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+	<!-- Insert your content here below! -->
+
+
+     <h2>Machine Design (Mar. 23)</h1>
+    
+    <h3>Menu</h3>
+
+	 <h3>Process</h3>
+	<p>
+        Below you will find my dictation, notes and documentation about the processes that my team and I went throught with regards to completing the Machien Design exercise and what each of us did to support this project. Each of the steps and processs will be covered in seperate sections. A link at the bottom of the page will take you to all of the files that I created for this exercise. My team is mad eup of Tom Dubick, Ian Brauner, Richard Fletcher, Brian Sossman, and myself, David Taylor.
+    
+    
+    <h3>Research and Preparation</h3>
+	<p>
+	In preparation for this exercise, I spent time reviewing the <a href="http://mtm.cba.mit.edu/machines/science/">machine design</a> module information as well as the <a href="http://monograph.io/james/m-mtm">extra documentation on the process.</a> Next, I found the <a href="http://mtm.cba.mit.edu/machines/science/doc/mMTM_Linear_CRD_002.3dm">rhino file .3dm</a>. I went to Brian due to him having prior experience with Rhino. Brian and I sat down researching different ways to convert the rhino file into a format that the epilog laser cutter would be able to read. After different file saving attempts, suchas .stl, .dwg, .ai, . svg, and .dxf. We had failure with these due to InkScape crrashing multiple times. Finally, we were able to export it from Rhino as a .eps file.
+	</p>
+        
+        <p>Ian began going through the equipment once they came in. Ian and Tom did research the day before on creating a agitator for our biology and engineering courses here at our school. For example, it could be used for agitation of yeast and for etching PC boards. The following links were used to help support this idea: <a href="http://www.instructables.com/id/Cheap-and-Easy-Lab-Agitator-Shaker-Great-for-PCBs-/">Cheap and Easy Lab Agitator Shaker Great for PCBs</a>, <a href="http://www.instructables.com/id/Open-Agitator-Your-Personal-Chemistry-Lab-Shaker/step6/Program-IT/">Open Agitator Your Personal Chemical Lab Shaker</a>, <a href="https://www.youtube.com/watch?v=0colIK-cqlw&list=UUoUJ9boWLPNN3qIKrqRBR8w">Complicated Device on YouTube</a>, <a href="http://makezine.com/2010/05/04/the-5-minute-circuit-board-agitator/">The 5 minute circuit board agitator</a>, and <a href="http://www.pellinglab.net/diy/diy-benchtop-cd-rom-agitator-sh">DIY benchtop cd rom agitiator</a>. </p>
+        
+        <p>Richard, Tom, Ian and I brainstormed creating the agitator by having the X and Y axis move back and forth quickly. We want to be able to create a code that allows for the option of two modes: aggressive mixing, and smooth, consistent movement. </p>
+        
+        <p>The next issue we had once getting the scaling correct. The .eps file was opened in Corel Draw and seemed to work well once the settings were changed in Rhino before hand. Next, the lines needs to be changed for rastoring and engraving in Corel Draw. This was done by Ian and Tom by checking each line and part. Furthermore, I came up with the idea of using a caliper to measure parts in the kit, so we could scale the parts to the point it matched the size of the holes that held the plastic plugs for the metal poles. Furthermore, the length of the poles were used to get an idea for the length of the boxes. You can see this concepts below in the images:</p>
+
+        <p class=pic><img src=media/scale%20of%20the%20plugs.JPG></p>
+        <p class=pic><img src=media/changing%20scale%20and%20thickness.JPG></p>
+        
+        <p>We spent about an hour attempting to make changes to the line thickness and used color mapping before we realized that something was slightly incorrect with the sizes of the pieces due to them not fitting on the sheets of cardboard. Ian than upload the file directly into adobe illustrator, which provide the correct size. The issue we found now that the large center box still does not fit the over all sizing of the machine. All of the other peices work. Ian and I learned how to begin assemblying the pieces, which was helpful, because, the moving image on the site was hard to follow. Tom cleaned and prepared the laser cutter for cutting. Furthermore, he cut all of the other peices with Richard's help. We</p>
+
+        
+        <p class=pic><img src=media/machine1.JPG></p>
+        <p class=pic><img src=media/machine2.JPG></p>
+        <p class=pic><img src=media/machine3.JPG></p>
+        <p class=pic><img src=media/machine4.JPG></p>
+        
+        <P>Are laser cutter begin to have problems with cutting the materials. We first notice it when we were using the color mapping features. We tried using different festures, softwares, searching the web for tips, and more. After using a razor to cut out the parts above, we begin looking for more solutions. For about a 8 hour, all of us kept trying different ideas to get it to cut. We cleaned the machines and lubricated the parts as well as reset different features. Finally, we got a hold of epilog support staff. They started to help fix a vairety of issues with hardware and software. We feel that once we have this solved, it will be easy to assemble our machine part and model the movement of the agitator.We learned that the epilog manager was never installed as well as how to use it. Furthermore, driver were updated, hardware defualt settings were changed, and Corel Draw RBG settings. It would only cut the general settings but not well. We learned to auto focues with the thickness of matierall too. We learned that the orginal tech guy who trained us was not very good and causing more issues. Currently, Epilog is looking at our hex file to see why it will not work. The links following links were used for support: <a href="http://www.instructables.com/id/10-Tips-and-Tricks-for-Laser-Engraving-and-Cutting/?ALLSTEPS">Instructables support</a>, and <a href="http://support.epiloglaser.com/article/8205/42786/color-management-settings-coreldraw-x5">Epilog Support</a>.
+        </P>
+        
+   
+
+
+	<p>Next, Ian created a svg file than laoding it into the fab lab module. Tom and Ian did this mulitple times and each time it crashed the software. We are currently waiting back from Epliog, who is reviewing the file to see if there is an issue in it. We feel that the laser cutter is having problems which is leading to the majority of the issues.</p>
+        
+        <p> We laser cut the pieces out the best we could with the issues with our laser cutter. We than took razors to the cardboard and cut them out. Next, we cut out the holes ansd began assemblying the cardboard pieces. After the aseembly of the cardboard, we glued the pieces together and used clamps to hold them together while they dried. It is important to use the motor mount cardboard pieces with the screws to attach the stepper motors with the screw rodes. Below is a zip file with the assembly photos:</p>
+        
+        <p><a href="media/Week_9_Files-2016-04-07.zip"</p>
+            
+    <p> The project was finally completed and put together with a lot of hurdles due to the laser cutter not working correectly. This was defiently a team effort as well as Ian was the key to our success. The image below is our assembled machine.</p>
+        
+       <p class=pic><img src=media/machine%20finished%20build.JPG></p>
+    
+     <h3>Project Files</h3>
+	<p>
+	<p>This is a button to access the files created for this exercise course for all of the above softwares.</p>
+            <p><a class="btn btn-primary" href="
+https://drive.google.com/open?id=0Bxi9iaM7VRHYMlRJbEtORkFrbUk
+" role="button">View more &raquo;</a></p>
+    <!-- End of your content -->
+
+    </div> <!-- /container -->
+
+	<!-- footer -->
+    
+    <footer id="footer">
+        <p id="cclicense">
+                </p>
+        <p class="license">
+        Theme: <a href="https://github.com/openp2pdesign/FabAcademy_Template">Fab Academy Template</a> by <a href="http://openp2pdesign.org">Massimo Menichinelli</a> <br>
+        Based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a>+<a href="http://jquery.com/">JQuery</a>+<a href="https://code.google.com/p/google-code-prettify/">google-code-prettify</a>+<a href="http://jmblog.github.io/color-themes-for-google-code-prettify/github/">GitHub theme for google-code-prettify</a>+<a href="https://code.google.com/p/jsc3d/">JSC3D</a>+<a href="https://github.com/thegrubbsian/jquery.ganttView">jquery.ganttView</a>.
+        </p>
+    </footer>
+    
+
+	<!-- Do not touch this! -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="media/jquery-1.9.1.min.js"></script>
+    
+    <!-- Syntax Highlighter -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js">
+    </script>
+    <!-- From https://github.com/jmblog/color-themes-for-google-code-prettify -->
+    <link href="media/github.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()   
+		})
+	  }(window.jQuery)
+	</script>
+	
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

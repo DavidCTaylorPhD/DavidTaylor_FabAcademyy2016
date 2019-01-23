@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Name Surname">
+    <link rel="icon" href="media/favicon.ico">
+
+     <title>Fab Academy 2016 - David C. Taylor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="media/fabacademy.css" rel="stylesheet">
+    
+    <!-- 3D files viewer -->
+    <script type="text/javascript" src="media/jsc3d_ie.min.js"></script>
+	<script type="text/javascript" src="media/jsc3d.min.js"></script>
+    <script type="text/javascript" src="media/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="media/jsc3d.touch.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Load the menu file -->
+    <script>
+	function menu() {
+					  $('#exercises').load("exercises-menu.html");
+					  $('#project').load("project-menu.html");
+					  $('#cclicense').load("license.html");
+					  }
+	</script>
+
+  </head>
+
+  <body onload="menu()">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">David C. Taylor</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
+              <ul id="exercises" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Project <span class="caret"></span></a>
+              <ul id="project" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+	<!-- Insert your content here below! -->
+
+
+     <h2>3D Scanning and Printing (Feb. 24)</h1>
+    
+  <h3>Process</h3>
+	<p>
+        Below you will find my dictation, notes and documentation about the processes I went throught with regards to use CAD software to design my 3D object as well as using the 3D printer and Scanner. Each of the topics will be covered in seperate sections. A link at the bottom of the page will take you to all of the files that I created for this exercise. </p>
+	</p>
+    
+      <h3>3D Printing</h3>
+      
+      <h4>123D Design</h4> 
+        
+        <p>I used 123D Design to create a my 3D design of my Batman Kid's Toy. I used the Primitives tools to create foundationary basic shapes. When creating the sphere and square shapes,  I dimensioned each of the shapes in their width, height and depth sizes. You can manipulate the scale of an object as well as the unit, such as metric and standard. I made teh swaure 3"x3"x3" and the sphere with a diameter of 2". Next, I shelled the square, so it would be able to hold the sphere. Than I moved the sphere into the inside of the square. Lastly, I imported a batman logo that was a pre-made object that I found on <a href="http://www.thingiverse.com/thing:12381"> Thingiverse</a>. I scaled the batman logo and made 4 copies of the logo. Plus, I used the grouping and ungrouping features when assembling the individual pieces to the box after using the snap tool to combine these individual pieces, which helped with centering and attaching the sections together. I than merged the batman logos -0.3mm into the box to create a batman cutout subractively. I than made sure everything was grouped.</p>
+            
+         <p class=pic><img src=media/BATMAN%20TOY%201.png></p>
+        <p class=pic><img src=media/BATMAN%20TOY2.png></p>
+            
+      <iframe id='embed3DViewer'  src='http://www.123dapp.com/fullpreview/embedViewer?assetId=5221102&size=medium' scrolling='no' style='border:none; width: 495px; height: 555px'> </iframe>
+      
+      <p>After the failed prints, I made some changes to my file. I scaled down to a 1.5"x1.5"x1.5" and put a support for the ball, which can be snapped off after the print. The ball kept moving during the print.
+          
+        <iframe id='embed3DViewer'  src='http://www.123dapp.com/fullpreview/embedViewer?assetId=5223502&size=medium' scrolling='no' style='border:none; width: 495px; height: 555px'> </iframe>
+          
+          <p><div id="fsMediaPlayer">	<iframe width="640" height="360" src="https://www.youtube.com/embed/LfX7KLAfFII" frameborder="0" allowfullscreen></iframe></p>
+        
+	  <p>123D Design is an autoDesk product. I currently use it in my 8th grade engineering class. It provides the user the ability either start with basic shapes and manipulate them or design objects from "scratch". It is a cloud-bsaed CAD software that runs on your computer. </p>
+	  
+	  <p> The top row of tools allows the user to create primative 3D shapes (circles, squares, etc.), sketch 2D shapes and lines, construct objects (extrude, sweep, etc.), modify objects (press/pull, filet, etc.), patterns (path, circular, etc.), grouping of objects, combining, text creation, attaching object faces, and measurement of shapes. These are all the tools you need to create shapes and objects. On the left hand-side, you can move objects, change your view, group and toggeling. When you putt all these objects together, you get an excellent tool for teaching CAD to students. Below you can access a presentation that I use with my students to teach them how to use 123D design at my school: </p>
+	  <a href="https://docs.google.com/presentation/d/11ehm-LfZXUfb5_uuSWF55lo8xlBPF9AuI_e2ZfUB_8M/edit?usp=sharing">123D Design Lesson 1</a> and  <a href=" https://docs.google.com/presentation/d/1qdilQrFGjIWlbf8e1qHm5StrT5QInnjS5N-uyTNa3-M/edit?usp=sharing">123D Design Lesson 2</a>.
+	 
+	  
+            <h4>Polar 3D</h4>
+      <p> I took the stl file of the batman toy and uploaded it into the Polar3D by using the Polar Cloud printing system. It took me 5x to get the print to final work. I would load the file to the printer and prep the printer by hair spraying the mirror so it is tacky and heating the extruder to 180C. Once it is heated, I would push the filament through the extruder to make sure it was ready to print. Lastly, I started the print. The <a href="http://polar3d.com/">Polar 3D Printer</a> printer is pretty user friendly and great for a school setting. It is impportant that you do not mix up the indivudalized mirrors for the printers with others, because, they ar enot interchangable. Also, the center point of the print area can sometimes cause over heating that leads to a hole, so I would move your pretty slight off the center point.</p>
+      
+	  <p>Polar 3D is design for teachers and students in a K-12 setting. It is made to me extremly user friendly, as well as cut out a lot of controls that would cause confusing in a K-12 classroom for teachers and students. The Polar 3D uses a browswer-bsed cloud system for printing with the option of printing any where from an internet connection as long as the printer is connected online. You do have the option of hard wiring it to a computer or using the standard wifi connection process that is user friendly. The polar 3D uses a light sysemt to show you that you are getting power, internet connection, and wifi connection to you LAN. The key is to have half white and blue lights to be read to go for work. The polar 3d system has a slicer like features, but it is not as robust due to limiting possible errors. </p>
+      
+	  <p>The Polar 3D is the primar 3D printer that is used in my middle school engineering classroom. There is a lot of benefits for training middle school students how to use a single, semi-user friendly 3D printer, such as cooperative learning experiences and learning conctruction with peer support. You can manipulate 3D .stl files loaded into the Polar cloud software by changing their location on the print mirro, sizes height or width and scale, as well as adding supports, such as raft. Besides these limited setting, you cannot change the object very much. This process can be done when you load the file from your computer. It provides you this option to make changes or to go right to printing setup. The following presentation is used with my middle schoolers to teach them how to use the printer: <a href="https://docs.google.com/presentation/d/1XDpM6xKET7uop3_p0Uv6qyo3WL6Sww2JCov-5PiyGWI/edit?usp=sharing">Polar 3D Lesson</a>. </p>
+	  
+	<h3>3D Scanning</h3>
+	<p> For the 3D scanning part, I used the <a href="https://matterandform.net/scanner"> Matter and Form Scanner</a>. I scanned three objects: the Tuang Child Skull print, a black lego, and a red lego. Each of the prints kinda sucked. I even recalibrated the scanner and redid a few of the lego scans. It is a very easy tool to use, but it is not detailed enough to be worth a true scan. I learned how to clean the object to improve the quality of it as well as how to export it to an stl or other formats. I kept experimenting with combining parts to get better out comes. This is a cool feature, but it is time consuming. The larger the scanned object as well as the amount of detail, the longer it takes to combine. I used the recombine feature by checking the box to allow for advanced combining. I combined multiple scans of my skull to get a pretty awesome finished product. Below are some images of my scans, the orginal items scanned, and the stl meshed saved files.
+	</p>
+            <p class=pic><img src=media/scanner%20calibrate.png></p>
+        <p class=pic><img src=media/lego1.png></p>
+         <p class=pic><img src=media/lego2.png></p>
+        <p class=pic><img src=media/skull1.png></p>
+         <p class=pic><img src=media/skull2.png></p>
+      
+	
+   <iframe id='embed3DViewer'  src='http://www.123dapp.com/fullpreview/embedViewer?assetId=5243536&size=medium' scrolling='no' style='border:none; width: 495px; height: 555px'> </iframe>
+      
+      
+      <p>I made a <a href="https://sketchfab.com/">Sketch Fab account</a>, but my scanned skull files were larger than the 50MB limit. I end up using 123D Design for viewing my files. I had to just upload the skull into 123D Design and save it my projects udner my account.</p>
+        
+      <h3>Tips for Using the Polar 3D</h3>
+      <p> It is important to use hairspray to make the mirro sticky. If you do not use enough hair spray, the print will not stick to the mirror. Plus, if you use to much hair spray and print while it is till wet you print will move during the creation. Also, you do not want to max out the Z axis when printing, because, you will end up pushing the tubing off the stepper motor for the Z axis. To fix this issue, you need to turn the rod while holding the tubing until you are able to slip back on to the stepper motor and continue this process until it slips to the bottom of the motor shaft. You may need to even trim the tubing to fix the issue if it is over used. To support the printing process, you can make changes to the Cera settings with in the Polar Cloud. You can change the flow rate, layers per time, support matieral (everywhere, raft or brim), and more. This can help improve your printing cabability while printing. You can also help with printing by moving the object off the center point of the mirror to cut back on over heating in the middle. You also may want to change the quality of the print to in Cera.</p>
+      
+      
+	<h3>Project Files</h3>
+	<p>
+	<p>This is a button to access the files created for this exercise course for all of the above softwares.</p>
+            <p><a class="btn btn-primary" href="https://drive.google.com/folderview?id=0Bxi9iaM7VRHYaF9oUzZJb3I2ZWM&usp=sharing" role="button">View more &raquo;</a></p>
+    <!-- End of your content -->
+
+    </div> <!-- /container -->
+
+	<!-- footer -->
+    
+    <footer id="footer">
+        <p id="cclicense">
+                </p>
+        <p class="license">
+        Theme: <a href="https://github.com/openp2pdesign/FabAcademy_Template">Fab Academy Template</a> by <a href="http://openp2pdesign.org">Massimo Menichinelli</a> <br>
+        Based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a>+<a href="http://jquery.com/">JQuery</a>+<a href="https://code.google.com/p/google-code-prettify/">google-code-prettify</a>+<a href="http://jmblog.github.io/color-themes-for-google-code-prettify/github/">GitHub theme for google-code-prettify</a>+<a href="https://code.google.com/p/jsc3d/">JSC3D</a>+<a href="https://github.com/thegrubbsian/jquery.ganttView">jquery.ganttView</a>.
+        </p>
+    </footer>
+    
+
+	<!-- Do not touch this! -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="media/jquery-1.9.1.min.js"></script>
+    
+    <!-- Syntax Highlighter -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js">
+    </script>
+    <!-- From https://github.com/jmblog/color-themes-for-google-code-prettify -->
+    <link href="media/github.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()   
+		})
+	  }(window.jQuery)
+	</script>
+	
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

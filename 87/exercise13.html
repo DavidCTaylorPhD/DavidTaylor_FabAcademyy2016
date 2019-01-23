@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Name Surname">
+    <link rel="icon" href="media/favicon.ico">
+
+    <title>Fab Academy 2016 - David C. Taylor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="media/fabacademy.css" rel="stylesheet">
+    
+    <!-- 3D files viewer -->
+    <script type="text/javascript" src="media/jsc3d_ie.min.js"></script>
+	<script type="text/javascript" src="media/jsc3d.min.js"></script>
+    <script type="text/javascript" src="media/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="media/jsc3d.touch.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Load the menu file -->
+    <script>
+	function menu() {
+					  $('#exercises').load("exercises-menu.html");
+					  $('#project').load("project-menu.html");
+					  $('#cclicense').load("license.html");
+					  }
+	</script>
+
+  </head>
+
+  <body onload="menu()">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">David C. Taylor</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
+              <ul id="exercises" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Project <span class="caret"></span></a>
+              <ul id="project" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+	<!-- Insert your content here below! -->
+
+
+     <h2>Outputs Devices (Apr. 27)</h1>
+    
+  <h3>Process</h3>
+	<p>
+        Below you will find my dictation, notes and documentation about the processes I went throught with regards to completing the Outputs exercise. Each of the step and processs will be covered in seperate sections.  A link at the bottom of the page will take you to all of the files that I created for this exercise.
+    
+    <h3>Planning</h3>
+        
+	<p>I worked with Terence to plannout my servo output board. He reviewed Neal's design with me. I told him I wanted to add a LED connection jumper from PB2 with the plan of using this board as part of my final project. I used <a href="http://academy.cba.mit.edu/classes/output_devices/servo/hello.servo.44.png">Neal's design</a> as the foundation for my own board. I also looked at previous Fab Lab student's sites for support. I looked at <a href="http://fabacademy.org/archives/2014/students/gutierrez.adolfo/11%20Output%20Devices.html">Adolfo Gutiérrez Sánchez's</a>, <a href="http://fabacademy.org/archives/2015/eu/students/santos.fabricio/week11.html">Fabrico Santo's</a>, and <a href="http://fabacademy.org/archives/2013/students/carter.chris/fablablog/week13/fablablogweek13.html">Chris Carter's</a> Fab Lab pages on Outputs. I found this to be very helpful with designing and programmming my board. </p>
+	
+	<h3>Eagle</h3>
+        
+	<p> I created my schematic using Eagle. I opened a my hello.world board to use as my base, so I would not need to go and find all of the parts. Terence helped me find the mosfet peice, because, I was not aware of it. After creating the schematic, I made the board. I did have some issues with creating the create wire paths in the schematic as well as the board due to my software not working correctly. I would try to make a wire connection, but the tool would not locate the correct location. I closed the software and even had colleagues look at it. I could not find a solution, so I just kept moving forward and ignored the yellow wires. I used a few 0K resistors as jumpers. I used the servo plane by Neal, but I added a break out LED jumpr pins with a 49.9k resistor to PB2, so I could code a LED as well. I did this because I was planning a head for my final project that involves a Batman spotlight that moves with two servo motors. My board has two servo motors and a LED pin connection point. You can see my schematic and board below:</p>
+        
+           <p class=pic><img src=media/week13.0.png></p>
+           <p class=pic><img src=media/week13.3.png></p>
+        
+        <p>Lastly, I took out the jumper pads for the LED break out pins, because, they kept ripping the pads off due to not having enough support. I replaced them with a two pin through hole jumper pins instead. These were much stronger.</p>
+        
+                   <p class=pic><img src=media/week12.24.png></p>
+        
+        <P>Once again, I reviewed my board and realized that I had some wires missing. This happen between the PB3 and the RST connections.  I keep comparing ym board back and forth to Neal's servo board. Furthermore, I realized that I accidently deleted some wires acrtoss my board. I had Terence check my board and he pointed out that I may have too many wires running under my IC as well as that my LED and pin had straight VCC connected, which would power it all the time. This helped me a lot. I made changes to my board to fix these issues. You can see the changes in the images below:</P>
+	
+             <p class=pic><img src=media/week12.26.png></p>
+           <p class=pic><img src=media/week12.27.png></p>
+
+	<H3>Soldering</H3>
+        
+        <p>I made two soldering boards, which neither of them worked. The first board began getting very hot. I thought the issue was the fact that the wrong bit was used on the other mill, because, one of my students switched the bit on me as well as removed the board, which lead to me finishing the cuts with a razor blade. I thought that made it was creating a short. Furthermore, Neal's board has a 22uF capacitor on it, which is not in the inventory. I tried using a 10uF but had no success. Plus, I made a mistake and used a Mosfett instead of a resonator on the board. Lastly, I forgot a trace wire too. Long story short, there were a lot of mistakes on this board.</p>
+        
+        <p>The large amount of mistakes on the first attempted baord lead to me double checking my Eagle files and cutting another board. The second board ended up heating up again. I believe the issue is the fact that the wrong capacitor is being used. I used the 10uF again. I looked up again on the inventory for the 22uF, but could not find it. Furthermore, I checked DigiKey's site and they do not even carry one. DigiKey does carry a 0.22uF. I checked with Terence and he stated he would look in to it for me.</p>
+        
+                   <p class=pic><img src=media/week13.5.jpg></p>
+        
+        <p>Terence told me to use two 10uF capacitors instead of a 22uF. I did this by stacking the two 10uFs on top of one another and soldering them. This put them in parrallel, which increased their capacity.</p>
+        
+        
+        <p>When I cut my board, I had some difficulties a few times. This new board shifted on me and end up with a large cut write through it. I had to to cut it again. Moral of the story is to make sure you have enought tape holding your board down.</p>
+        
+          <p class=pic><img src=media/21.1.png></p>
+              
+              <p> No matter what I do my boards IC 5V regulator over heats. I have made multiple boards and even made a version of Neals's baord, and they all over heat. I have asked Terence for help on this issue. I am extremely frustrated. I have made multiple boards and spent over 60 hours on this project. I have soldered multiple boards and researched a lot of code and previous Fab students, and I am still making little to no progress. Below are images of my latest board creation as well as a Neal like board:</p>
+        
+        <p class=pic><img src=media/21.22.png></p>
+            <p class=pic><img src=media/21.23.png></p>
+                
+                <p> The <a href="http://www.digikey.com/product-search/en?keywords=0%09ZLDO1117G50DICT-ND">IC 5V regulator</a> continues to get extremely hot as well as smoke.</p>
+        <p>The the batch of regulators end up being bad. Terence tested multiple regulators and each one smoked. He showed me how to attach a 9v battery using aligator clips to the VCC and the back GND as well as using a multimeter on the output vcc to emasure the drop in voltage. The over heating burnout each regualtor that was tested. The good news here is I designed the board correctly. Furthermore, all I need to do is switch out the regualro on my previous boards. </p>
+        
+        <p>The batch of regulators were not bad. After Adam looked at the specs for it, he noticed the pin layout was different than Neal's. This layout was not on the inventory. In the end, I had to solder jumper wires to the regulator from the VCC in, VCC out and the GND to make it work.</p>
+            
+        <p class=pic><img src=media/21.24.png></p>
+            
+        <h3>Final Project Coding</h3>
+        
+        I used the basic blink and servo sweep that comes with the Arduino software as the foundation for my code. I also used <a href="http://highlowtech.org/?p=1695"> high low tech</a> and <a href="https://learn.adafruit.com/multi-tasking-the-arduino-part-1/a-clean-sweep">adafruit</a> to help with my coding. The image below is my code:
+        
+              <p class=pic><img src=media/weekbatman.png></p>
+                  
+                  <p>I used the High Low Tech page to help with wiring and coding.</p>
+    
+            
+            <h3>Success</h3>
+        
+        <p>I used a board designed by <a href="http://fabacademy.org/archives/2015/eu/students/santos.fabricio/week11.html">Santos Fabricio</a>. I did this after a long time struggling to get my board to work correctly after 9 attempts. I used the foundation from the servo sweep to make my code for my servo motor. Below you can see my video of my servo working and an image of the code. I am so excited to final have this section completed after the long struggle I went through to get it to work. Plus, I learned that it is important to udnerstand the specs of a regulator. I had to add extra wire to make my regulator work. I also learned that it is important to use a 360 degree servo versus a 180 degree due to the motor locking on the turns.</p>
+        
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/U3gBZ1sW2YY" frameborder="0" allowfullscreen></iframe>
+        
+    
+		<p class=pic><img src=media/week15.12.JPG></p>
+            
+            
+<h3>Files</h3>
+    
+  <p><a href="media/output_devices_batman.zip">Output Device Files</a></p>
+    
+    <!-- End of your content -->
+
+    </div> <!-- /container -->
+
+	<!-- footer -->
+    
+    <footer id="footer">
+        <p id="cclicense">
+                </p>
+        <p class="license">
+        Theme: <a href="https://github.com/openp2pdesign/FabAcademy_Template">Fab Academy Template</a> by <a href="http://openp2pdesign.org">Massimo Menichinelli</a> <br>
+        Based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a>+<a href="http://jquery.com/">JQuery</a>+<a href="https://code.google.com/p/google-code-prettify/">google-code-prettify</a>+<a href="http://jmblog.github.io/color-themes-for-google-code-prettify/github/">GitHub theme for google-code-prettify</a>+<a href="https://code.google.com/p/jsc3d/">JSC3D</a>+<a href="https://github.com/thegrubbsian/jquery.ganttView">jquery.ganttView</a>.
+        </p>
+    </footer>
+    
+
+	<!-- Do not touch this! -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="media/jquery-1.9.1.min.js"></script>
+    
+    <!-- Syntax Highlighter -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js">
+    </script>
+    <!-- From https://github.com/jmblog/color-themes-for-google-code-prettify -->
+    <link href="media/github.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()   
+		})
+	  }(window.jQuery)
+	</script>
+	
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>
